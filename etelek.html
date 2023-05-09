@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/logo.png">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
+    <script src="app.js"></script>
+    <title>Etelek</title>
+</head>
+
+<body>
+    <header>
+        <div class="szin">
+            <div class="elhelyezes elhelyezesEtelek  elhelyezesEtelek-tablet-mobil">
+                <a href="index.html#FoOldal">
+                    <div class="logoNevvelEtel">
+                        <img src="img/logo.png" alt="">
+                        <h1>Lorem Ipsum</h1>
+                    </div>
+                </a>
+
+                <div class="linkekEtel desktop">
+                    <ul>
+                        <li><button class="Leves">Leves</button></li>
+                        <li><button class="Foetel">Főétel</button></li>
+                        <li><button class="Salata">Saláta</button></li>
+                        <li><button class="Pizza">Pizza</button></li>
+                        <li><button class="Desszert">Desszert</button></li>
+                    </ul>
+                </div>
+                <div class="mobil-tablet">
+                    <div id="elojon" class="kinezet">
+                        <a class="bezargomb" onclick="bezarMenu()">&#10006;</a>
+                        <div class="kinezet-elemek">
+                            <ul>
+                                <li><button onclick="bezarMenu()" class="Leves">Leves</button></li>
+                                <li><button onclick="bezarMenu()" class="Foetel">Főétel</button></li>
+                                <li><button onclick="bezarMenu()" class="Salata">Saláta</button></li>
+                                <li><button onclick="bezarMenu()" class="Pizza">Pizza</button></li>
+                                <li><button onclick="bezarMenu()" class="Desszert">Desszert</button></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <span class="etelspan" onclick="megnyitMenu()">Menü</span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <button onclick="topFunction()" id="myBtn" title="Az elejére">&uarr;</button>
+        <button id="myBtn2" title="Üzenet">&#x2709;</button>
+        <div class="teljes-kep">
+            <div class="teljes-kep-kozepen">
+                <div class="bezar">
+                    <button id="myBtn3" title="kilep">&#10006;</button>
+                </div>
+                <h1>Küldjön üzenetet!</h1>
+                <div class="adatok">
+                    <form name="uzenetForm">
+                        <input class="inpMeret" type="text" placeholder="Név" id="formNev"><br>
+                        <input class="inpMeret" type="email" placeholder="Email" name="email" id="formEmail"><br>
+                        <input class="inpMeret" type="text" placeholder="Telefon" id="formTelefon"><br>
+                        <textarea class="textAreaMeret" cols="60" rows="7" placeholder="Üzenet" id="formUzenet"></textarea><br>
+                        <input type="button" class="submit" value="Küldés">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="teljes-kep-etel">
+            <div class="teljes-kep-kozepen-etel">
+                <div class="bezar-etel">
+                    <button id="myBtn4" title="kilep">&#10006;</button>
+                </div>
+                <div class="adatok-etel">
+                    <div class="egybe-minden">
+                        <div class="felso-etel">
+                            <img src="#" alt="">
+                            <div>
+                                <h1>Hiba</h1>
+                                <p class="ar-etel"></p>
+                            </div>
+                        </div>
+                        <div class="also-etel-leiras ">
+                            <p class="leiras-etel scroll"></p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="elhelyezes nezet">
+            <div class="levesDiv">
+                <div class="EtelKep">
+                    <img src="img/leves1.jpg" alt="">
+                    <p class="nevp">Leves1</p>
+                    <div>14 Lej</div>
+                    <p class="leirasp"> Leves1 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed placerat,
+                        mauris
+                        vitae accumsan
+                        elementum, sapien sapien tempus arcu, ac fringilla nulla enim ac nunc. Praesent iaculis
+                        vehicula massa. Phasellus ornare vestibulum est, ut elementum purus iaculis non.Curabitur
+                        consequat, tortor sed accumsan suscipit, justo lacus vulputate arcu, quis tempor purus justo eu
+                        ante. Suspendisse porta orci leo, eget vehicula nulla tincidunt viverra. Fusce varius
+                        consectetur turpis at bibendum. Praesent sit amet accumsan leo. Aliquam eget commodo nisi.
+                    </p>
+                </div>
+                <div class="EtelKep">
+                    <img src="img/leves2.jpg" alt="">
+                    <p class="nevp">Leves2</p>
+                    <div>20 Lej</div>
+                    <p class="leirasp">Leves2 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed placerat,
+                        mauris
+                        vitae accumsan
+                        elementum, sapien sapien tempus arcu, ac fringilla nulla enim ac nunc. Praesent iaculis
+                        vehicula massa. Phasellus ornare vestibulum est, ut elementum purus iaculis non.Curabitur
+                        consequat, tortor sed accumsan suscipit, justo lacus vulputate arcu, quis tempor purus justo eu
+                        ante. Suspendisse porta orci leo, eget vehicula nulla tincidunt viverra. Fusce varius
+                        consectetur turpis at bibendum. Praesent sit amet accumsan leo. Aliquam eget commodo nisi.
+                    </p>
+                </div>
+                <div class="EtelKep">
+                    <img src="img/leves3.jpg" alt="">
+                    <p class="nevp">Leves3</p>
+                    <div>25 Lej</div>
+                    <p class="leirasp">Leves3 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed placerat,
+                        mauris
+                        vitae accumsan
+                        elementum, sapien sapien tempus arcu, ac fringilla nulla enim ac nunc. Praesent iaculis
+                        vehicula massa. Phasellus ornare vestibulum est, ut elementum purus iaculis non.Curabitur
+                        consequat, tortor sed accumsan suscipit, justo lacus vulputate arcu, quis tempor purus justo eu
+                        ante. Suspendisse porta orci leo, eget vehicula nulla tincidunt viverra. Fusce varius
+                        consectetur turpis at bibendum. Praesent sit amet accumsan leo. Aliquam eget commodo nisi.
+                    </p>
+                </div>
+                <div class="EtelKep">
+                    <img src="img/leves4.jpg" alt="">
+                    <p class="nevp">Leves4</p>
+                    <div>30 Lej</div>
+                    <p class="leirasp">Leves4 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed placerat,
+                        mauris
+                        vitae accumsan
+                        elementum, sapien sapien tempus arcu, ac fringilla nulla enim ac nunc. Praesent iaculis
+                        vehicula massa. Phasellus ornare vestibulum est, ut elementum purus iaculis non.Curabitur
+                        consequat, tortor sed accumsan suscipit, justo lacus vulputate arcu, quis tempor purus justo eu
+                        ante. Suspendisse porta orci leo, eget vehicula nulla tincidunt viverra. Fusce varius
+                        consectetur turpis at bibendum. Praesent sit amet accumsan leo. Aliquam eget commodo nisi.
+                    </p>
+                </div>
+                <div class="EtelKep">
+                    <img src="img/leves5.jpg" alt="">
+                    <p class="nevp">Leves5</p>
+                    <div>28 Lej</div>
+                    <p class="leirasp">Leves5 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed placerat,
+                        mauris
+                        vitae accumsan
+                        elementum, sapien sapien tempus arcu, ac fringilla nulla enim ac nunc. Praesent iaculis
+                        vehicula massa. Phasellus ornare vestibulum est, ut elementum purus iaculis non.Curabitur
+                        consequat, tortor sed accumsan suscipit, justo lacus vulputate arcu, quis tempor purus justo eu
+                        ante. Suspendisse porta orci leo, eget vehicula nulla tincidunt viverra. Fusce varius
+                        consectetur turpis at bibendum. Praesent sit amet accumsan leo. Aliquam eget commodo nisi.
+                    </p>
+                </div>
+                <div class="EtelKep">
+                    <img src="img/leves6.jpg" alt="">
+                    <p>Leves6</p>
+                    <div>22 Lej</div>
+                    <p class="leirasp">Leves6 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed placerat,
+                        mauris
+                        vitae accumsan
+                        elementum, sapien sapien tempus arcu, ac fringilla nulla enim ac nunc. Praesent iaculis
+                        vehicula massa. Phasellus ornare vestibulum est, ut elementum purus iaculis non.Curabitur
+                        consequat, tortor sed accumsan suscipit, justo lacus vulputate arcu, quis tempor purus justo eu
+                        ante. Suspendisse porta orci leo, eget vehicula nulla tincidunt viverra. Fusce varius
+                        consectetur turpis at bibendum. Praesent sit amet accumsan leo. Aliquam eget commodo nisi.
+                    </p>
+                </div>
+                <div class="EtelKep">
+                    <img src="img/Leves7.jpg" alt="">
+                    <p class="nevp">Leves7</p>
+                    <div>30 Lej</div>
+                    <p class="leirasp">Leves7 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed placerat,
+                        mauris
+                        vitae accumsan
+                        elementum, sapien sapien tempus arcu, ac fringilla nulla enim ac nunc. Praesent iaculis
+                        vehicula massa. Phasellus ornare vestibulum est, ut elementum purus iaculis non.Curabitur
+                        consequat, tortor sed accumsan suscipit, justo lacus vulputate arcu, quis tempor purus justo eu
+                        ante. Suspendisse porta orci leo, eget vehicula nulla tincidunt viverra. Fusce varius
+                        consectetur turpis at bibendum. Praesent sit amet accumsan leo. Aliquam eget commodo nisi.
+                    </p>
+                </div>
+                <div class="EtelKep">
+                    <img src="img/Leves8.jpg" alt="">
+                    <p class="nevp">Leves8</p>
+                    <div>28 Lej</div>
+                    <p class="leirasp">Leves8 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed placerat,
+                        mauris
+                        vitae accumsan
+                        elementum, sapien sapien tempus arcu, ac fringilla nulla enim ac nunc. Praesent iaculis
+                        vehicula massa. Phasellus ornare vestibulum est, ut elementum purus iaculis non.Curabitur
+                        consequat, tortor sed accumsan suscipit, justo lacus vulputate arcu, quis tempor purus justo eu
+                        ante. Suspendisse porta orci leo, eget vehicula nulla tincidunt viverra. Fusce varius
+                        consectetur turpis at bibendum. Praesent sit amet accumsan leo. Aliquam eget commodo nisi.
+                    </p>
+                </div>
+                <div class="EtelKep">
+                    <img src="img/leves9.jpeg" alt="">
+                    <p class="nevp">Leves9</p>
+                    <div>22 Lej</div>
+                    <p class="leirasp">Leves9 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed placerat,
+                        mauris
+                        vitae accumsan
+                        elementum, sapien sapien tempus arcu, ac fringilla nulla enim ac nunc. Praesent iaculis
+                        vehicula massa. Phasellus ornare vestibulum est, ut elementum purus iaculis non.Curabitur
+                        consequat, tortor sed accumsan suscipit, justo lacus vulputate arcu, quis tempor purus justo eu
+                        ante. Suspendisse porta orci leo, eget vehicula nulla tincidunt viverra. Fusce varius
+                        consectetur turpis at bibendum. Praesent sit amet accumsan leo. Aliquam eget commodo nisi.
+                    </p>
+                </div>
+            </div>
+            <div class="pizzaDiv">
+                <div class="EtelKep">
+                    <img src="img/pizza1.jpg" alt="">
+                    <p class="nevp">Pizza1</p>
+                    <div>14 Lej</div>
+                    <p class="leirasp">Pizza1Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed placerat,
+                        mauris
+                        vitae accumsan
+                        elementum, sapien sapien tempus arcu, ac fringilla nulla enim ac nunc. Praesent iaculis
+                        vehicula massa. Phasellus ornare vestibulum est, ut elementum purus iaculis non.Curabitur
+                        consequat, tortor sed accumsan suscipit, justo lacus vulputate arcu, quis tempor purus justo eu
+                        ante. Suspendisse porta orci leo, eget vehicula nulla tincidunt viverra. Fusce varius
+                        consectetur turpis at bibendum. Praesent sit amet accumsan leo. Aliquam eget commodo nisi.
+                    </p>
+                </div>
+                <div class="EtelKep">
+                    <img src="img/pizza2.jpg" alt="">
+                    <p class="nevp">Pizza2</p>
+                    <div>20 Lej</div>
+                    <p class="leirasp">Pizza2 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed placerat,
+                        mauris
+                        vitae accumsan
+                        elementum, sapien sapien tempus arcu, ac fringilla nulla enim ac nunc. Praesent iaculis
+                        vehicula massa. Phasellus ornare vestibulum est, ut elementum purus iaculis non.Curabitur
+                        consequat, tortor sed accumsan suscipit, justo lacus vulputate arcu, quis tempor purus justo eu
+                        ante. Suspendisse porta orci leo, eget vehicula nulla tincidunt viverra. Fusce varius
+                        consectetur turpis at bibendum. Praesent sit amet accumsan leo. Aliquam eget commodo nisi.
+                    </p>
+                </div>
+                <div class="EtelKep">
+                    <img src="img/pizza3.jpg" alt="">
+                    <p class="nevp">Pizza3</p>
+                    <div>25 Lej</div>
+                    <p class="leirasp">Pizza3 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed placerat,
+                        mauris
+                        vitae accumsan
+                        elementum, sapien sapien tempus arcu, ac fringilla nulla enim ac nunc. Praesent iaculis
+                        vehicula massa. Phasellus ornare vestibulum est, ut elementum purus iaculis non.Curabitur
+                        consequat, tortor sed accumsan suscipit, justo lacus vulputate arcu, quis tempor purus justo eu
+                        ante. Suspendisse porta orci leo, eget vehicula nulla tincidunt viverra. Fusce varius
+                        consectetur turpis at bibendum. Praesent sit amet accumsan leo. Aliquam eget commodo nisi.
+                    </p>
+                </div>
+                <div class="EtelKep">
+                    <img src="img/pizza4.jpg" alt="">
+                    <p class="nevp">Pizza4</p>
+                    <div>30 Lej</div>
+                    <p class="leirasp">Pizza4 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed placerat,
+                        mauris
+                        vitae accumsan
+                        elementum, sapien sapien tempus arcu, ac fringilla nulla enim ac nunc. Praesent iaculis
+                        vehicula massa. Phasellus ornare vestibulum est, ut elementum purus iaculis non.Curabitur
+                        consequat, tortor sed accumsan suscipit, justo lacus vulputate arcu, quis tempor purus justo eu
+                        ante. Suspendisse porta orci leo, eget vehicula nulla tincidunt viverra. Fusce varius
+                        consectetur turpis at bibendum. Praesent sit amet accumsan leo. Aliquam eget commodo nisi.
+                    </p>
+                </div>
+                <div class="EtelKep">
+                    <img src="img/pizza5.jpg" alt="">
+                    <p class="nevp">Pizza5</p>
+                    <div>28 Lej</div>
+                    <p class="leirasp">Pizza5 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed placerat,
+                        mauris
+                        vitae accumsan
+                        elementum, sapien sapien tempus arcu, ac fringilla nulla enim ac nunc. Praesent iaculis
+                        vehicula massa. Phasellus ornare vestibulum est, ut elementum purus iaculis non.Curabitur
+                        consequat, tortor sed accumsan suscipit, justo lacus vulputate arcu, quis tempor purus justo eu
+                        ante. Suspendisse porta orci leo, eget vehicula nulla tincidunt viverra. Fusce varius
+                        consectetur turpis at bibendum. Praesent sit amet accumsan leo. Aliquam eget commodo nisi.
+                    </p>
+                </div>
+                <div class="EtelKep">
+                    <img src="img/pizza6.jpeg" alt="">
+                    <p class="nevp">Pizza6</p>
+                    <div>22 Lej</div>
+                    <p class="leirasp">Pizza6 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed placerat,
+                        mauris
+                        vitae accumsan
+                        elementum, sapien sapien tempus arcu, ac fringilla nulla enim ac nunc. Praesent iaculis
+                        vehicula massa. Phasellus ornare vestibulum est, ut elementum purus iaculis non.Curabitur
+                        consequat, tortor sed accumsan suscipit, justo lacus vulputate arcu, quis tempor purus justo eu
+                        ante. Suspendisse porta orci leo, eget vehicula nulla tincidunt viverra. Fusce varius
+                        consectetur turpis at bibendum. Praesent sit amet accumsan leo. Aliquam eget commodo nisi.
+                    </p>
+                </div>
+                <div class="EtelKep">
+                    <img src="img/pizza7.jpg" alt="">
+                    <p class="nevp">Pizza7</p>
+                    <div>30 Lej</div>
+                    <p class="leirasp">Pizza7 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed placerat,
+                        mauris
+                        vitae accumsan
+                        elementum, sapien sapien tempus arcu, ac fringilla nulla enim ac nunc. Praesent iaculis
+                        vehicula massa. Phasellus ornare vestibulum est, ut elementum purus iaculis non.Curabitur
+                        consequat, tortor sed accumsan suscipit, justo lacus vulputate arcu, quis tempor purus justo eu
+                        ante. Suspendisse porta orci leo, eget vehicula nulla tincidunt viverra. Fusce varius
+                        consectetur turpis at bibendum. Praesent sit amet accumsan leo. Aliquam eget commodo nisi.
+                    </p>
+                </div>
+                <div class="EtelKep">
+                    <img src="img/pizza8.jpeg" alt="">
+                    <p class="nevp">Pizza8</p>
+                    <div>28 Lej</div>
+                    <p class="leirasp">Pizza8 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed placerat,
+                        mauris
+                        vitae accumsan
+                        elementum, sapien sapien tempus arcu, ac fringilla nulla enim ac nunc. Praesent iaculis
+                        vehicula massa. Phasellus ornare vestibulum est, ut elementum purus iaculis non.Curabitur
+                        consequat, tortor sed accumsan suscipit, justo lacus vulputate arcu, quis tempor purus justo eu
+                        ante. Suspendisse porta orci leo, eget vehicula nulla tincidunt viverra. Fusce varius
+                        consectetur turpis at bibendum. Praesent sit amet accumsan leo. Aliquam eget commodo nisi.
+                    </p>
+                </div>
+                <div class="EtelKep">
+                    <img src="img/pizza9.jpg" alt="">
+                    <p class="nevp">Pizza9</p>
+                    <div>22 Lej</div>
+                    <p class="leirasp">Pizza9 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed placerat,
+                        mauris
+                        vitae accumsan
+                        elementum, sapien sapien tempus arcu, ac fringilla nulla enim ac nunc. Praesent iaculis
+                        vehicula massa. Phasellus ornare vestibulum est, ut elementum purus iaculis non.Curabitur
+                        consequat, tortor sed accumsan suscipit, justo lacus vulputate arcu, quis tempor purus justo eu
+                        ante. Suspendisse porta orci leo, eget vehicula nulla tincidunt viverra. Fusce varius
+                        consectetur turpis at bibendum. Praesent sit amet accumsan leo. Aliquam eget commodo nisi.
+                    </p>
+                </div>
+            </div>
+            <div class="salataDiv">
+                <div class="EtelKep">
+                    <img src="img/salata1.jpg" alt="">
+                    <p class="nevp">Salata1</p>
+                    <div>14 Lej</div>
+                    <p class="leirasp">Salata1 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed placerat,
+                        mauris vitae accumsan
+                        elementum, sapien sapien tempus arcu, ac fringilla nulla enim ac nunc. Praesent iaculis
+                        vehicula massa. Phasellus ornare vestibulum est, ut elementum purus iaculis non.Curabitur
+                        consequat, tortor sed accumsan suscipit, justo lacus vulputate arcu, quis tempor purus justo eu
+                        ante. Suspendisse porta orci leo, eget vehicula nulla tincidunt viverra. Fusce varius
+                        consectetur turpis at bibendum. Praesent sit amet accumsan leo. Aliquam eget commodo nisi.
+                    </p>
+                </div>
+                <div class="EtelKep">
+                    <img src="img/salata2.jpg" alt="">
+                    <p class="nevp">Salata2</p>
+                    <div>20 Lej</div>
+                    <p class="leirasp">Salata2 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed placerat,
+                        mauris
+                        vitae accumsan
+                        elementum, sapien sapien tempus arcu, ac fringilla nulla enim ac nunc. Praesent iaculis
+                        vehicula massa. Phasellus ornare vestibulum est, ut elementum purus iaculis non.Curabitur
+                        consequat, tortor sed accumsan suscipit, justo lacus vulputate arcu, quis tempor purus justo eu
+                        ante. Suspendisse porta orci leo, eget vehicula nulla tincidunt viverra. Fusce varius
+                        consectetur turpis at bibendum. Praesent sit amet accumsan leo. Aliquam eget commodo nisi.
+                    </p>
+                </div>
+                <div class="EtelKep">
+                    <img src="img/salata3.jpg" alt="">
+                    <p class="nevp">Salata3</p>
+                    <div>25 Lej</div>
+                    <p class="leirasp">Salata3 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed placerat,
+                        mauris
+                        vitae accumsan
+                        elementum, sapien sapien tempus arcu, ac fringilla nulla enim ac nunc. Praesent iaculis
+                        vehicula massa. Phasellus ornare vestibulum est, ut elementum purus iaculis non.Curabitur
+                        consequat, tortor sed accumsan suscipit, justo lacus vulputate arcu, quis tempor purus justo eu
+                        ante. Suspendisse porta orci leo, eget vehicula nulla tincidunt viverra. Fusce varius
+                        consectetur turpis at bibendum. Praesent sit amet accumsan leo. Aliquam eget commodo nisi.
+                    </p>
+                </div>
+                <div class="EtelKep">
+                    <img src="img/salata4.jpg" alt="">
+                    <p class="nevp">Salata4</p>
+                    <div>30 Lej</div>
+                    <p class="leirasp">Salata4 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed placerat,
+                        mauris
+                        vitae accumsan
+                        elementum, sapien sapien tempus arcu, ac fringilla nulla enim ac nunc. Praesent iaculis
+                        vehicula massa. Phasellus ornare vestibulum est, ut elementum purus iaculis non.Curabitur
+                        consequat, tortor sed accumsan suscipit, justo lacus vulputate arcu, quis tempor purus justo eu
+                        ante. Suspendisse porta orci leo, eget vehicula nulla tincidunt viverra. Fusce varius
+                        consectetur turpis at bibendum. Praesent sit amet accumsan leo. Aliquam eget commodo nisi.
+                    </p>
+                </div>
+                <div class="EtelKep">
+                    <img src="img/salata5.jpg" alt="">
+                    <p class="nevp">Salata5</p>
+                    <div>28 Lej</div>
+                    <p class="leirasp">Salata5 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed placerat,
+                        mauris
+                        vitae accumsan
+                        elementum, sapien sapien tempus arcu, ac fringilla nulla enim ac nunc. Praesent iaculis
+                        vehicula massa. Phasellus ornare vestibulum est, ut elementum purus iaculis non.Curabitur
+                        consequat, tortor sed accumsan suscipit, justo lacus vulputate arcu, quis tempor purus justo eu
+                        ante. Suspendisse porta orci leo, eget vehicula nulla tincidunt viverra. Fusce varius
+                        consectetur turpis at bibendum. Praesent sit amet accumsan leo. Aliquam eget commodo nisi.
+                    </p>
+                </div>
+                <div class="EtelKep">
+                    <img src="img/salata6.jpg" alt="">
+                    <p class="nevp">Salata6</p>
+                    <div>22 Lej</div>
+                    <p class="leirasp">Salata6 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed placerat,
+                        mauris
+                        vitae accumsan
+                        elementum, sapien sapien tempus arcu, ac fringilla nulla enim ac nunc. Praesent iaculis
+                        vehicula massa. Phasellus ornare vestibulum est, ut elementum purus iaculis non.Curabitur
+                        consequat, tortor sed accumsan suscipit, justo lacus vulputate arcu, quis tempor purus justo eu
+                        ante. Suspendisse porta orci leo, eget vehicula nulla tincidunt viverra. Fusce varius
+                        consectetur turpis at bibendum. Praesent sit amet accumsan leo. Aliquam eget commodo nisi.
+                    </p>
+                </div>
+                <div class="EtelKep">
+                    <img src="img/salata7.jpg" alt="">
+                    <p class="nevp">Salata7</p>
+                    <div>30 Lej</div>
+                    <p class="leirasp">Salata7 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed placerat,
+                        mauris
+                        vitae accumsan
+                        elementum, sapien sapien tempus arcu, ac fringilla nulla enim ac nunc. Praesent iaculis
+                        vehicula massa. Phasellus ornare vestibulum est, ut elementum purus iaculis non.Curabitur
+                        consequat, tortor sed accumsan suscipit, justo lacus vulputate arcu, quis tempor purus justo eu
+                        ante. Suspendisse porta orci leo, eget vehicula nulla tincidunt viverra. Fusce varius
+                        consectetur turpis at bibendum. Praesent sit amet accumsan leo. Aliquam eget commodo nisi.
+                    </p>
+                </div>
+                <div class="EtelKep">
+                    <img src="img/salata8.jpg" alt="">
+                    <p class="nevp">Salata8</p>
+                    <div>28 Lej</div>
+                    <p class="leirasp">Salata8 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed placerat,
+                        mauris
+                        vitae accumsan
+                        elementum, sapien sapien tempus arcu, ac fringilla nulla enim ac nunc. Praesent iaculis
+                        vehicula massa. Phasellus ornare vestibulum est, ut elementum purus iaculis non.Curabitur
+                        consequat, tortor sed accumsan suscipit, justo lacus vulputate arcu, quis tempor purus justo eu
+                        ante. Suspendisse porta orci leo, eget vehicula nulla tincidunt viverra. Fusce varius
+                        consectetur turpis at bibendum. Praesent sit amet accumsan leo. Aliquam eget commodo nisi.
+                    </p>
+                </div>
+                <div class="EtelKep">
+                    <img src="img/salata9.jpg" alt="">
+                    <p class="nevp">Salata9</p>
+                    <div>22 Lej</div>
+                    <p class="leirasp">Salata9 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed placerat,
+                        mauris
+                        vitae accumsan
+                        elementum, sapien sapien tempus arcu, ac fringilla nulla enim ac nunc. Praesent iaculis
+                        vehicula massa. Phasellus ornare vestibulum est, ut elementum purus iaculis non.Curabitur
+                        consequat, tortor sed accumsan suscipit, justo lacus vulputate arcu, quis tempor purus justo eu
+                        ante. Suspendisse porta orci leo, eget vehicula nulla tincidunt viverra. Fusce varius
+                        consectetur turpis at bibendum. Praesent sit amet accumsan leo. Aliquam eget commodo nisi.
+                    </p>
+                </div>
+            </div>
+            <div class="foetelDiv">
+                <div class="EtelKep">
+                    <img src="img/foetel1.jpg" alt="">
+                    <p class="nevp">Főétel1</p>
+                    <div>14 Lej</div>
+                    <p class="leirasp">Főétel1 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed placerat,
+                        mauris
+                        vitae accumsan
+                        elementum, sapien sapien tempus arcu, ac fringilla nulla enim ac nunc. Praesent iaculis
+                        vehicula massa. Phasellus ornare vestibulum est, ut elementum purus iaculis non.Curabitur
+                        consequat, tortor sed accumsan suscipit, justo lacus vulputate arcu, quis tempor purus justo eu
+                        ante. Suspendisse porta orci leo, eget vehicula nulla tincidunt viverra. Fusce varius
+                        consectetur turpis at bibendum. Praesent sit amet accumsan leo. Aliquam eget commodo nisi.
+                    </p>
+                </div>
+                <div class="EtelKep">
+                    <img src="img/foetel2.jpg" alt="">
+                    <p>Főétel2</p>
+                    <div>20 Lej</div>
+                    <p class="leirasp">Főétel2 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed placerat,
+                        mauris
+                        vitae accumsan
+                        elementum, sapien sapien tempus arcu, ac fringilla nulla enim ac nunc. Praesent iaculis
+                        vehicula massa. Phasellus ornare vestibulum est, ut elementum purus iaculis non.Curabitur
+                        consequat, tortor sed accumsan suscipit, justo lacus vulputate arcu, quis tempor purus justo eu
+                        ante. Suspendisse porta orci leo, eget vehicula nulla tincidunt viverra. Fusce varius
+                        consectetur turpis at bibendum. Praesent sit amet accumsan leo. Aliquam eget commodo nisi.
+                    </p>
+                </div>
+                <div class="EtelKep">
+                    <img src="img/foetel3.jpg" alt="">
+                    <p class="nevp">Főétel3</p>
+                    <div>25 Lej</div>
+                    <p class="leirasp">Főétel3 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed placerat,
+                        mauris
+                        vitae accumsan
+                        elementum, sapien sapien tempus arcu, ac fringilla nulla enim ac nunc. Praesent iaculis
+                        vehicula massa. Phasellus ornare vestibulum est, ut elementum purus iaculis non.Curabitur
+                        consequat, tortor sed accumsan suscipit, justo lacus vulputate arcu, quis tempor purus justo eu
+                        ante. Suspendisse porta orci leo, eget vehicula nulla tincidunt viverra. Fusce varius
+                        consectetur turpis at bibendum. Praesent sit amet accumsan leo. Aliquam eget commodo nisi.
+                    </p>
+                </div>
+                <div class="EtelKep">
+                    <img src="img/foetel4.jpg" alt="">
+                    <p class="nevp">Főétel4</p>
+                    <div>30 Lej</div>
+                    <p class="leirasp">Főétel4 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed placerat,
+                        mauris
+                        vitae accumsan
+                        elementum, sapien sapien tempus arcu, ac fringilla nulla enim ac nunc. Praesent iaculis
+                        vehicula massa. Phasellus ornare vestibulum est, ut elementum purus iaculis non.Curabitur
+                        consequat, tortor sed accumsan suscipit, justo lacus vulputate arcu, quis tempor purus justo eu
+                        ante. Suspendisse porta orci leo, eget vehicula nulla tincidunt viverra. Fusce varius
+                        consectetur turpis at bibendum. Praesent sit amet accumsan leo. Aliquam eget commodo nisi.
+                    </p>
+                </div>
+                <div class="EtelKep">
+                    <img src="img/foetel5.jpg" alt="">
+                    <p class="nevp">Főétel5</p>
+                    <div>28 Lej</div>
+                    <p class="leirasp">Főétel5 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed placerat,
+                        mauris
+                        vitae accumsan
+                        elementum, sapien sapien tempus arcu, ac fringilla nulla enim ac nunc. Praesent iaculis
+                        vehicula massa. Phasellus ornare vestibulum est, ut elementum purus iaculis non.Curabitur
+                        consequat, tortor sed accumsan suscipit, justo lacus vulputate arcu, quis tempor purus justo eu
+                        ante. Suspendisse porta orci leo, eget vehicula nulla tincidunt viverra. Fusce varius
+                        consectetur turpis at bibendum. Praesent sit amet accumsan leo. Aliquam eget commodo nisi.
+                    </p>
+                </div>
+                <div class="EtelKep">
+                    <img src="img/foetel6.jpeg" alt="">
+                    <p class="nevp">Főétel6</p>
+                    <div>22 Lej</div>
+                    <p class="leirasp">Főétel6 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed placerat,
+                        mauris
+                        vitae accumsan
+                        elementum, sapien sapien tempus arcu, ac fringilla nulla enim ac nunc. Praesent iaculis
+                        vehicula massa. Phasellus ornare vestibulum est, ut elementum purus iaculis non.Curabitur
+                        consequat, tortor sed accumsan suscipit, justo lacus vulputate arcu, quis tempor purus justo eu
+                        ante. Suspendisse porta orci leo, eget vehicula nulla tincidunt viverra. Fusce varius
+                        consectetur turpis at bibendum. Praesent sit amet accumsan leo. Aliquam eget commodo nisi.
+                    </p>
+                </div>
+                <div class="EtelKep">
+                    <img src="img/foetel7.jpg" alt="">
+                    <p class="nevp">Főétel7</p>
+                    <div>30 Lej</div>
+                    <p class="leirasp">Főétel7 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed placerat,
+                        mauris
+                        vitae accumsan
+                        elementum, sapien sapien tempus arcu, ac fringilla nulla enim ac nunc. Praesent iaculis
+                        vehicula massa. Phasellus ornare vestibulum est, ut elementum purus iaculis non.Curabitur
+                        consequat, tortor sed accumsan suscipit, justo lacus vulputate arcu, quis tempor purus justo eu
+                        ante. Suspendisse porta orci leo, eget vehicula nulla tincidunt viverra. Fusce varius
+                        consectetur turpis at bibendum. Praesent sit amet accumsan leo. Aliquam eget commodo nisi.
+                    </p>
+                </div>
+                <div class="EtelKep">
+                    <img src="img/foetel8.jpg" alt="">
+                    <p class="nevp">Főétel8</p>
+                    <div>28 Lej</div>
+                    <p class="leirasp">Főétel8 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed placerat,
+                        mauris
+                        vitae accumsan
+                        elementum, sapien sapien tempus arcu, ac fringilla nulla enim ac nunc. Praesent iaculis
+                        vehicula massa. Phasellus ornare vestibulum est, ut elementum purus iaculis non.Curabitur
+                        consequat, tortor sed accumsan suscipit, justo lacus vulputate arcu, quis tempor purus justo eu
+                        ante. Suspendisse porta orci leo, eget vehicula nulla tincidunt viverra. Fusce varius
+                        consectetur turpis at bibendum. Praesent sit amet accumsan leo. Aliquam eget commodo nisi.
+                    </p>
+                </div>
+                <div class="EtelKep">
+                    <img src="img/foetel9.jpg" alt="">
+                    <p class="nevp">Főétel9</p>
+                    <div>22 Lej</div>
+                    <p class="leirasp">Főétel9 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed placerat,
+                        mauris
+                        vitae accumsan
+                        elementum, sapien sapien tempus arcu, ac fringilla nulla enim ac nunc. Praesent iaculis
+                        vehicula massa. Phasellus ornare vestibulum est, ut elementum purus iaculis non.Curabitur
+                        consequat, tortor sed accumsan suscipit, justo lacus vulputate arcu, quis tempor purus justo eu
+                        ante. Suspendisse porta orci leo, eget vehicula nulla tincidunt viverra. Fusce varius
+                        consectetur turpis at bibendum. Praesent sit amet accumsan leo. Aliquam eget commodo nisi.
+                    </p>
+                </div>
+            </div>
+
+            <div class="desszertDiv">
+                <div class="EtelKep">
+                    <img src="img/desszert1.jpg" alt="">
+                    <p class="nevp">Desszert1</p>
+                    <div>14 Lej</div>
+                    <p class="leirasp">Desszert1 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed placerat,
+                        mauris
+                        vitae accumsan
+                        elementum, sapien sapien tempus arcu, ac fringilla nulla enim ac nunc. Praesent iaculis
+                        vehicula massa. Phasellus ornare vestibulum est, ut elementum purus iaculis non.Curabitur
+                        consequat, tortor sed accumsan suscipit, justo lacus vulputate arcu, quis tempor purus justo eu
+                        ante. Suspendisse porta orci leo, eget vehicula nulla tincidunt viverra. Fusce varius
+                        consectetur turpis at bibendum. Praesent sit amet accumsan leo. Aliquam eget commodo nisi.
+                    </p>
+                </div>
+                <div class="EtelKep">
+                    <img src="img/desszert2.jpeg" alt="">
+                    <p class="nevp">Desszert2</p>
+                    <div>20 Lej</div>
+                    <p class="leirasp">Desszert2 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed placerat,
+                        mauris
+                        vitae accumsan
+                        elementum, sapien sapien tempus arcu, ac fringilla nulla enim ac nunc. Praesent iaculis
+                        vehicula massa. Phasellus ornare vestibulum est, ut elementum purus iaculis non.Curabitur
+                        consequat, tortor sed accumsan suscipit, justo lacus vulputate arcu, quis tempor purus justo eu
+                        ante. Suspendisse porta orci leo, eget vehicula nulla tincidunt viverra. Fusce varius
+                        consectetur turpis at bibendum. Praesent sit amet accumsan leo. Aliquam eget commodo nisi.
+                    </p>
+                </div>
+                <div class="EtelKep">
+                    <img src="img/desszert3.jpg" alt="">
+                    <p class="nevp">Desszert3</p>
+                    <div>25 Lej</div>
+                    <p class="leirasp">Desszert3 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed placerat,
+                        mauris
+                        vitae accumsan
+                        elementum, sapien sapien tempus arcu, ac fringilla nulla enim ac nunc. Praesent iaculis
+                        vehicula massa. Phasellus ornare vestibulum est, ut elementum purus iaculis non.Curabitur
+                        consequat, tortor sed accumsan suscipit, justo lacus vulputate arcu, quis tempor purus justo eu
+                        ante. Suspendisse porta orci leo, eget vehicula nulla tincidunt viverra. Fusce varius
+                        consectetur turpis at bibendum. Praesent sit amet accumsan leo. Aliquam eget commodo nisi.
+                    </p>
+                </div>
+                <div class="EtelKep">
+                    <img src="img/desszert4.jpg" alt="">
+                    <p class="nevp">Desszert4</p>
+                    <div>30 Lej</div>
+                    <p class="leirasp">Desszert4 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed placerat,
+                        mauris
+                        vitae accumsan
+                        elementum, sapien sapien tempus arcu, ac fringilla nulla enim ac nunc. Praesent iaculis
+                        vehicula massa. Phasellus ornare vestibulum est, ut elementum purus iaculis non.Curabitur
+                        consequat, tortor sed accumsan suscipit, justo lacus vulputate arcu, quis tempor purus justo eu
+                        ante. Suspendisse porta orci leo, eget vehicula nulla tincidunt viverra. Fusce varius
+                        consectetur turpis at bibendum. Praesent sit amet accumsan leo. Aliquam eget commodo nisi.
+                    </p>
+                </div>
+                <div class="EtelKep">
+                    <img src="img/desszert5.jpg" alt="">
+                    <p class="nevp">Desszert5</p>
+                    <div>28 Lej</div>
+                    <p class="leirasp">Desszert5 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed placerat,
+                        mauris
+                        vitae accumsan
+                        elementum, sapien sapien tempus arcu, ac fringilla nulla enim ac nunc. Praesent iaculis
+                        vehicula massa. Phasellus ornare vestibulum est, ut elementum purus iaculis non.Curabitur
+                        consequat, tortor sed accumsan suscipit, justo lacus vulputate arcu, quis tempor purus justo eu
+                        ante. Suspendisse porta orci leo, eget vehicula nulla tincidunt viverra. Fusce varius
+                        consectetur turpis at bibendum. Praesent sit amet accumsan leo. Aliquam eget commodo nisi.
+                    </p>
+                </div>
+                <div class="EtelKep">
+                    <img src="img/desszert6.jpg" alt="">
+                    <p class="nevp">Desszert6</p>
+                    <div>22 Lej</div>
+                    <p class="leirasp">Desszert6 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed placerat,
+                        mauris
+                        vitae accumsan
+                        elementum, sapien sapien tempus arcu, ac fringilla nulla enim ac nunc. Praesent iaculis
+                        vehicula massa. Phasellus ornare vestibulum est, ut elementum purus iaculis non.Curabitur
+                        consequat, tortor sed accumsan suscipit, justo lacus vulputate arcu, quis tempor purus justo eu
+                        ante. Suspendisse porta orci leo, eget vehicula nulla tincidunt viverra. Fusce varius
+                        consectetur turpis at bibendum. Praesent sit amet accumsan leo. Aliquam eget commodo nisi.
+                    </p>
+                </div>
+                <div class="EtelKep">
+                    <img src="img/desszert7.jpg" alt="">
+                    <p class="nevp">Desszert7</p>
+                    <div>30 Lej</div>
+                    <p class="leirasp">Desszert7 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed placerat,
+                        mauris
+                        vitae accumsan
+                        elementum, sapien sapien tempus arcu, ac fringilla nulla enim ac nunc. Praesent iaculis
+                        vehicula massa. Phasellus ornare vestibulum est, ut elementum purus iaculis non.Curabitur
+                        consequat, tortor sed accumsan suscipit, justo lacus vulputate arcu, quis tempor purus justo eu
+                        ante. Suspendisse porta orci leo, eget vehicula nulla tincidunt viverra. Fusce varius
+                        consectetur turpis at bibendum. Praesent sit amet accumsan leo. Aliquam eget commodo nisi.
+                    </p>
+                </div>
+                <div class="EtelKep">
+                    <img src="img/desszert8.jpg" alt="">
+                    <p class="nevp">Desszert8</p>
+                    <div>28 Lej</div>
+                    <p class="leirasp">Desszert8 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed placerat,
+                        mauris
+                        vitae accumsan
+                        elementum, sapien sapien tempus arcu, ac fringilla nulla enim ac nunc. Praesent iaculis
+                        vehicula massa. Phasellus ornare vestibulum est, ut elementum purus iaculis non.Curabitur
+                        consequat, tortor sed accumsan suscipit, justo lacus vulputate arcu, quis tempor purus justo eu
+                        ante. Suspendisse porta orci leo, eget vehicula nulla tincidunt viverra. Fusce varius
+                        consectetur turpis at bibendum. Praesent sit amet accumsan leo. Aliquam eget commodo nisi.
+                    </p>
+                </div>
+                <div class="EtelKep">
+                    <img src="img/desszert9.jpg" alt="">
+                    <p class="nevp">Desszert9</p>
+                    <div>22 Lej</div>
+                    <p class="leirasp">Desszert9 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed placerat,
+                        mauris vitae accumsan
+                        elementum, sapien sapien tempus arcu, ac fringilla nulla enim ac nunc. Praesent iaculis
+                        vehicula massa. Phasellus ornare vestibulum est, ut elementum purus iaculis non.Curabitur
+                        consequat, tortor sed accumsan suscipit, justo lacus vulputate arcu, quis tempor purus justo eu
+                        ante. Suspendisse porta orci leo, eget vehicula nulla tincidunt viverra. Fusce varius
+                        consectetur turpis at bibendum. Praesent sit amet accumsan leo. Aliquam eget commodo nisi.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="szin">
+            <div class="elhelyezCim">
+                <h1>©2021 Lorem ipsum</h1>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

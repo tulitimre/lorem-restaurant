@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/logo.png">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
+    <script src="app.js"></script>
+
+    <title>Lorem Ipsum</title>
+</head>
+
+<body>
+    <header>
+        <div class="szin">
+            <div class="elhelyezes">
+                <a href="#"><img src="img/logo.png" alt="" id="#FoOldal"></a> 
+                <div class="desktop">
+                    <ul>
+                        <li><a href="etelek.html">Ételek</a></li>
+                        <li><a href="#rolunk">Rólunk</a></li>
+                        <li><a href="#kepek">Képek</a></li>
+                        <li><a href="#elerhetoseg">Elérhetőség</a></li>
+                    </ul>
+                </div>
+                <div class="mobil-tablet">
+                    <div id="elojon" class="kinezet">
+                        <a class="bezargomb" onclick="bezarMenu()">&#10006;</a>
+                        <div class="kinezet-elemek">
+                            <ul>
+                                <li><a onclick="bezarMenu()" href="etelek.html">Ételek</a></li>
+                                <li><a onclick="bezarMenu()" href="#rolunk">Rólunk</a></li>
+                                <li><a onclick="bezarMenu()" href="#kepek">Képek</a></li>
+                                <li><a onclick="bezarMenu()" href="#elerhetoseg">Elérhetőség</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <span class="oldalmenu" onclick="megnyitMenu()"><img src="img/menu.png" alt=""></span>
+                </div>
+            </div>
+        </div>
+        <div class="elsoBelso">
+            <div class="container">
+                <h1>Lorem Ipsum</h1>
+                <hr>
+                <p>
+                    "Ha ételről van szó, nincs olyan, &nbsp; hogy "rossz étel" vagy "jó étel". A változatosság a
+                    lényeg!"
+                </p>
+                <hr class="also">
+                <div class="rendel">
+                    <a href="https://hamm.ro/">Rendelés</a>
+                </div>
+            </div>
+        </div>
+        <div id="slider">
+            <figure>
+                <img src="img/hatter1.jpg" alt>
+                <img src="img/hatter2.jpg" alt>
+                <img src="img/hatter3.jpg" alt>
+                <img src="img/hatter4.jpg" alt>
+            </figure>
+        </div>
+    </header>
+    <main>
+        <button onclick="topFunction()" id="myBtn" title="Az elejére">&uarr;</button>
+        <button id="myBtn2" title="Üzenet">&#x2709;</button>
+        <div class="teljes-kep">
+            <div class="teljes-kep-kozepen">
+                <div class="bezar">
+                    <button id="myBtn3" title="kilep">&#10006;</button>
+                </div>
+                <h1>Küldjön üzenetet!</h1>
+                <div class="adatok">
+
+                    <form name="uzenetForm">
+                        <input class="inpMeret" type="text" placeholder="Név" id="formNev"><br>
+                        <input class="inpMeret" type="email" placeholder="Email" name="email" id="formEmail"><br>
+                        <input class="inpMeret" type="text" placeholder="Telefon" id="formTelefon"><br>
+                        <textarea class="textAreaMeret" cols="60" rows="7" placeholder="Üzenet" id="formUzenet"></textarea><br>
+                        <input type="button" class="submit" value="Küldés">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="szin">
+            <div class="elhelyezCim" id="rolunk">
+                <h1>Rólunk</h1>
+            </div>
+        </div>
+        <div class="elhelyezes">
+            <div>
+                <h2 class="cim12">Kezdetek</h2>
+                <img src="img/rolunk1.jpg" alt="">
+                <p class="sozveg1">
+                    Quisque purus tellus, consectetur in varius et, sollicitudin eu lorem. Donec auctor gravida dui
+                    vehicula efficitur. Orci varius natoque penatibus et magnis dis parturient montes, nascetur
+                    ridiculus mus. Donec tincidunt nisi eu nisi bibendum, at pretium est venenatis. Maecenas non commodo
+                    lectus, vitae cursus justo. Pellentesque faucibus, augue non consectetur rutrum, ante lectus auctor
+                    nibh, at tempor lectus enim quis nunc. Etiam sed risus et lorem luctus suscipit vitae quis neque.
+                    Donec porttitor fermentum est at egestas. Maecenas eleifend, ipsum ut dapibus aliquet, quam mi
+                    egestas nunc, nec bibendum nibh dolor non diam. Donec consequat volutpat molestie.
+                    Quisque purus tellus, consectetur in varius et, sollicitudin eu lorem. Donec auctor gravida dui
+                    vehicula efficitur. Orci varius natoque penatibus et magnis dis parturient montes, nascetur
+                    ridiculus mus. Donec tincidunt nisi eu nisi bibendum, at pretium est venenatis. Maecenas non commodo
+                    lectus, vitae cursus justo. Pellentesque faucibus, augue non consectetur rutrum, ante lectus auctor
+                    nibh, at tempor lectus enim quis nunc. Etiam sed risus et lorem luctus suscipit vitae quis neque.
+                    Donec porttitor fermentum est at egestas. Maecenas eleifend, ipsum ut dapibus aliquet, quam mi
+                    egestas nunc, nec bibendum nibh dolor non diam. Donec consequat volutpat molestie.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae eros tempus, porta sapien
+                    varius, finibus neque. Morbi vel dui sollicitudin, efficitur felis ut, tempor augue. Nulla eleifend
+                    ipsum id leo lobortis, in tincidunt ex aliquet. Phasellus elementum felis quis cursus bibendum.
+                    Donec pulvinar sagittis est at ultrices. Sed nec felis facilisis, facilisis nunc fermentum, interdum
+                    ligula. Fusce eget quam sed quam dictum aliquam. Vestibulum ac lorem at purus ultricies aliquet in
+                    sit amet tellus.
+                </p>
+                <div>
+                    <h2 class="cim12">Fejlődés</h2>
+                    <img src="img/rolunk2.jpg" alt="">
+                    <p class="sozveg2">
+                        Quisque purus tellus, consectetur in varius et, sollicitudin eu lorem. Donec auctor gravida dui
+                        vehicula efficitur. Orci varius natoque penatibus et magnis dis parturient montes, nascetur
+                        ridiculus mus. Donec tincidunt nisi eu nisi bibendum, at pretium est venenatis. Maecenas non
+                        commodo
+                        lectus, vitae cursus justo. Pellentesque faucibus, augue non consectetur rutrum, ante lectus
+                        auctor
+                        nibh, at tempor lectus enim quis nunc. Etiam sed risus et lorem luctus suscipit vitae quis
+                        neque.
+                        Donec porttitor fermentum est at egestas. Maecenas eleifend, ipsum ut dapibus aliquet, quam mi
+                        egestas nunc, nec bibendum nibh dolor non diam. Donec consequat volutpat molestie.
+                        Quisque purus tellus, consectetur in varius et, sollicitudin eu lorem. Donec auctor gravida dui
+                        vehicula efficitur. Orci varius natoque penatibus et magnis dis parturient montes, nascetur
+                        ridiculus mus. Donec tincidunt nisi eu nisi bibendum, at pretium est venenatis. Maecenas non
+                        commodo
+                        lectus, vitae cursus justo. Pellentesque faucibus, augue non consectetur rutrum, ante lectus
+                        auctor
+                        nibh, at tempor lectus enim quis nunc. Etiam sed risus et lorem luctus suscipit vitae quis
+                        neque.
+                        Donec porttitor fermentum est at egestas. Maecenas eleifend, ipsum ut dapibus aliquet, quam mi
+                        egestas nunc, nec bibendum nibh dolor non diam. Donec consequat volutpat molestie.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae eros tempus, porta sapien
+                        varius, finibus neque. Morbi vel dui sollicitudin, efficitur felis ut, tempor augue. Nulla
+                        eleifend
+                        ipsum id leo lobortis, in tincidunt ex aliquet. Phasellus elementum felis quis cursus bibendum.
+                        Donec pulvinar sagittis est at ultrices. Sed nec felis facilisis, facilisis nunc fermentum,
+                        interdum
+                        ligula. Fusce eget quam sed quam dictum aliquam. Vestibulum ac lorem at purus ultricies aliquet
+                        in
+                        sit amet tellus.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="szin">
+            <div class="elhelyezCim" id="kepek">
+                <h1>Képek</h1>
+            </div>
+        </div>
+        <div class="elhelyezes">
+            <div class="mozog">
+                <div class="mozgo-doboz">
+                    <button class="vissza" onclick="prev()">&#8592;</button>
+                    <img src="img/kep3.jpeg" class="valtozoKepek" alt="">
+
+                    <button class="elore" onclick="next()">&#8594;</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="szin">
+        <div class="elhelyezCim" id="elerhetoseg">
+            <h1>Elérhetőség</h1>
+        </div>
+    </div>
+    <div class="elhelyezes margin-top elerhetosegMobil">
+        <div class="b-meret">
+            <h2 class="elerhetoh2">Elérhetőek vagyunk</h2>
+            <p>Csikszereda egyik utca, x + 1 szám</p>
+            <p>Telefonszám: 007789512</p>
+            <p>Emailcím: contact@loremipsum.com</p>
+            <div class="kozossegiMedia">
+                <a href="https://www.instagram.com/"><img src="img/instagram.png" alt=""></a>
+                <a href="https://www.facebook.com/"><img src="img/facebook.png" alt=""></a>
+                <a href="https://twitter.com/"><img src="img/twitter.png" alt=""></a>
+            </div>
+            <h2 class="nyitvah2">Nyitvatartás</h2>
+            <div class="kulsoKeret">
+                <table>
+                    <tr>
+                        <td class="ballTabla">Hétfő-Péntek</td>
+                        <td class="jobbTabla">Szombat-Vasárnap</td>
+                    </tr>
+                    <tr>
+                        <td class="ballTabla">09:00-22:00</td>
+                        <td class="jobbTabla">08:00-23:00</td>
+                    </tr>
+                </table>
+            </div>
+
+        </div>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d88115.09132289726!2d25.669859529679815!3d46.35755001943873!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x474b2a092c490c6b%3A0x6aa5d0a276cb4941!2sCs%C3%ADkszereda!5e0!3m2!1shu!2sro!4v1620660808612!5m2!1shu!2sro"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" title="" class="terkep">
+        </iframe>
+    </div>
+    <footer>
+        <div class="szin">
+            <div class="elhelyezCim">
+                <h1>©2021 Lorem ipsum</h1>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
